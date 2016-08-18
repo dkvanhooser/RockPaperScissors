@@ -30,8 +30,7 @@ public class RockPlayer extends Player{
 		wins++;
 		
 	}
-
-	@Override
+	
 	public int getWins() {
 		return wins;
 		

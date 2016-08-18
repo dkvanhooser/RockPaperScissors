@@ -18,7 +18,7 @@ public class RandomPlayer extends Player{
 		return playerName;
 	}
 
-
+//creates a random int 1-3 and then picks a Roshambo variable from it.
 	public Roshambo generateRoshambo(Roshambo choice) {
 		switch((int)(Math.random() * 2) + 1){
 		case 1:roshambo = Roshambo.ROCK;
@@ -31,17 +31,11 @@ public class RandomPlayer extends Player{
 		return roshambo;
 	}
 
-
-
-	@Override
 	public void winCount() {
 		wins++;
 		
 	}
 
-
-
-	@Override
 	public int getWins() {
 		return wins;
 		

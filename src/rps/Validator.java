@@ -3,7 +3,7 @@ package rps;
 import java.util.Scanner;
 
 public class Validator {
-
+//makes sure the player that the user selected is valid, if not it loops around.
 	public static Player isValidOpponent(Scanner scan) {
 		String check = "";
 		do {
@@ -22,6 +22,7 @@ public class Validator {
 
 	}
 
+	//makes sure that the user enters y or n, otherwise it loops around
 	public static boolean isValidContinue(Scanner scan) {
 		String check = "";
 		do {
@@ -37,7 +38,8 @@ public class Validator {
 		return false;
 
 	}
-
+	
+	//makes sure when the user enters rock paper or scissors that the value is valid, otherwise is loops around.
 	public static Roshambo isWeaponValid(Scanner scan) {
 		String check = "";
 		do {
