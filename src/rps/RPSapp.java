@@ -16,7 +16,7 @@ public class RPSapp {
 		user.setPlayerName(scan.nextLine());
 		System.out.println("Hey, " + user.getPlayerName() + " Thanks for Playing!");
 		boolean cont = true;
-
+		
 		do {
 			
 			System.out.println("Would you like to play Tim or Jack?");
@@ -115,6 +115,17 @@ public class RPSapp {
 
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 }

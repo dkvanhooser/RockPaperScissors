@@ -2,36 +2,26 @@ package rps;
 
 
 public abstract class Player {
-	private String playerName;
-	private Roshambo roshambo;
+	protected String playerName;
+	protected Roshambo roshambo;
+	protected int wins;
 	public String getPlayerName() {
 		return playerName;
 	}
-	
 	public void setPlayerName(String playerName) {
 		this.playerName = playerName;
 	}
-
-
-
 	public Roshambo getRoshambo() {
 		return roshambo;
 	}
-	
-
-
-
 	public void setRoshambo(Roshambo roshambo) {
 		this.roshambo = roshambo;
 	}
-
-
-	public Player(){
-		
+	public void winCount() {
+		wins++;	
 	}
-	
-	abstract public void winCount();
-	abstract public int getWins();
+	public int getWins() {
+		return wins;
+	}
 	abstract public Roshambo generateRoshambo(Roshambo choice);
-
 }
